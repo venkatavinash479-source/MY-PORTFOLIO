@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avinash — Portfolio</title>
+
+  <!-- Tailwind CDN (THIS IS ALL YOU NEED FOR TAILWIND) -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="antialiased">
+
+  <!-- Theme Toggle -->
+  <input type="checkbox" id="theme-toggle" class="sr-only">
+
+  <div class="page">
+
+    <!--  Header  -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur-md">
+      <nav class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+
+        <!-- Logo -->
+        <a href="#home" class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full flex items-center justify-center themed-card shadow">
+            <span class="text-xl font-bold text-indigo-500">A</span>
+          </div>
+          <span class="font-semibold text-lg">Avinash</span>
+        </a>
+
+        <!-- Nav links -->
+        <ul class="hidden md:flex gap-6 text-sm">
+          <li><a href="#home" class="hover:underline">Home</a></li>
+          <li><a href="#about" class="hover:underline">About</a></li>
+          <li><a href="#skills" class="hover:underline">Skills</a></li>
+          <li><a href="#services" class="hover:underline">Services</a></li>
+          <li><a href="#projects" class="hover:underline">Projects</a></li>
+          <li><a href="#contact" class="hover:underline">Contact</a></li>
+        </ul>
+
+        <!-- Theme toggle -->
+        <label for="theme-toggle" class="cursor-pointer text-sm themed-card px-3 py-2 rounded-md">
+          Day / Night
+        </label>
+      </nav>
+    </header>
+
+    <!--  Hero  -->
+    <main id="home" class="max-w-6xl mx-auto px-6 py-14 grid md:grid-cols-2 gap-10 items-center">
+
+      <section>
+        <p class="text-sm uppercase tracking-wide text-gray-500">Hello, I’m</p>
+        <h1 class="text-4xl md:text-6xl font-extrabold mt-2 text-indigo-600">
+          Avinash
+        </h1>
+        <p class="mt-4 text-gray-600 max-w-lg">
+          I design and build clean, responsive websites using modern UI and front-end technologies.
+        </p>
+
+        <div class="mt-6 flex gap-4">
+          <a href="#projects" class="px-4 py-2 rounded-xl themed-card card-hover">
+            View Projects
+          </a>
+          <a href="#contact" class="px-4 py-2 rounded-xl bg-gradient-to-r from-indigo-500 to-emerald-400 text-white">
+            Contact Me
+          </a>
+        </div>
+      </section>
+
+      <aside class="themed-card p-6 rounded-2xl shadow floaty max-w-sm mx-auto text-center">
+        <img src="img.1.jpg" alt="Avinash profile"
+             class="w-36 h-36 mx-auto rounded-full object-cover mb-4">
+        <h3 class="font-semibold text-lg">Avinash</h3>
+        <p class="text-sm text-gray-500">Front-end Developer</p>
+      </aside>
+
+    </main>
+
+    <!--  About  -->
+<section id="about" class="max-w-6xl mx-auto px-6 py-12">
+
+  <h2 class="text-3xl font-bold mb-4">About Me</h2>
+
+  <p class="text-gray-600 max-w-3xl">
+    I am a front-end developer focused on building clean, responsive, and
+    user-friendly websites using modern technologies.
+  </p>
+
+  <!-- Read More -->
+  <details class="mt-4 max-w-3xl">
+
+    <summary
+      class="inline-block cursor-pointer px-4 py-2 rounded-lg bg-indigo-500 text-white
+             hover:bg-indigo-600 transition">
+      Read More
+    </summary>
+
+    <p class="mt-4 text-gray-600">
+      I work mainly with HTML, CSS, Tailwind CSS, and modern UI practices.
+      I enjoy learning new technologies, improving my coding skills,improving new designs and
+      building projects that focus on usability and performance.Becoming a Full Stack Developer isn’t just about learning different technologies. It’s about problem-solving, system design, and coding best practices. I had to understand how all these pieces fit together—how the frontend communicates with the backend, how databases store and retrieve data, how servers process requests, and how everything is optimized for performance.
+
+I also learned that software development is not a solo journey. Collaboration with designers, backend engineers, DevOps teams, and clients is crucial. Writing clean, maintainable code and following best practices
+    </p>
+
+  </details>
+
+</section>
+    <!-- skils  -->
+    <section id="skills" class="max-w-6xl mx-auto px-6 py-12">
+      <h2 class="text-3xl font-bold mb-6">Skills</h2>
+
+      <div class="space-y-4 max-w-xl">
+        <div>
+          <div class="flex justify-between text-sm">
+            <span>HTML & CSS</span><span>95%</span>
+          </div>
+          <div class="progress-bar"><div style="--width:95%"></div></div>
+        </div>
+
+        <div>
+          <div class="flex justify-between text-sm">
+            <span>JavaScript</span><span>85%</span>
+          </div>
+          <div class="progress-bar"><div style="--width:85%"></div></div>
+        </div>
+
+        <div>
+          <div class="flex justify-between text-sm">
+            <span>React</span><span>80%</span>
+          </div>
+          <div class="progress-bar"><div style="--width:80%"></div></div>
+        </div>
+      </div>
+    </section>
+
+  <!--  Services  -->
+<section id="services" class="max-w-6xl mx-auto px-6 py-12">
+
+  <h2 class="text-3xl font-bold mb-6">Services</h2>
+  <p class="text-gray-600 mb-8">
+    Services I offer to build secure, modern, and user-friendly applications.
+  </p>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Service 1 -->
+    <div class="themed-card p-6 rounded-xl card-hover hover:bg-blue-50 transition">
+      <img src="/project/service1.png.jpeg" alt="Web Services" class="w-12 h-12 mb-4">
+      <h4 class="font-semibold">Web Services</h4>
+      <p class="text-sm text-gray-600 mt-2">
+        Scalable web-based solutions.
+      </p>
+
+      <details class="mt-4">
+        <summary class="cursor-pointer inline-block px-3 py-1.5 bg-indigo-500 text-white rounded-md text-sm">
+          Read More
+        </summary>
+        <p class="mt-3 text-sm text-gray-600">
+          I design and develop scalable web services that are fast, secure, and reliable.
+        </p>
+      </details>
+    </div>
+
+    <!-- Service 2 -->
+    <div class="themed-card p-6 rounded-xl card-hover hover:bg-blue-50 transition">
+      <img src="/project/service2.png.jpeg" alt="Internet Applications" class="w-12 h-12 mb-4">
+      <h4 class="font-semibold">Internet Applications</h4>
+      <p class="text-sm text-gray-600 mt-2">
+        Cloud-ready internet apps.
+      </p>
+
+      <details class="mt-4">
+        <summary class="cursor-pointer inline-block px-3 py-1.5 bg-indigo-500 text-white rounded-md text-sm">
+          Read More
+        </summary>
+        <p class="mt-3 text-sm text-gray-600">
+          I build internet-based applications with smooth performance and clean UI.
+        </p>
+      </details>
+    </div>
+
+    <!-- Service 3 -->
+    <div class="themed-card p-6 rounded-xl card-hover hover:bg-blue-50 transition">
+      <img src="/project/service3.png.jpeg" alt="Website Development" class="w-12 h-12 mb-4">
+      <h4 class="font-semibold">Website Development</h4>
+      <p class="text-sm text-gray-600 mt-2">
+        Responsive website design.
+      </p>
+
+      <details class="mt-4">
+        <summary class="cursor-pointer inline-block px-3 py-1.5 bg-indigo-500 text-white rounded-md text-sm">
+          Read More
+        </summary>
+        <p class="mt-3 text-sm text-gray-600">
+          I develop responsive websites using HTML, CSS, and Tailwind CSS.
+        </p>
+      </details>
+    </div>
+
+    <!-- Service 4 -->
+    <div class="themed-card p-6 rounded-xl card-hover hover:bg-blue-50 transition">
+      <img src="project/service4.png.jpeg" alt="Cyber Security" class="w-12 h-12 mb-4">
+      <h4 class="font-semibold">Cyber Security</h4>
+      <p class="text-sm text-gray-600 mt-2">
+        Secure system design.
+      </p>
+
+      <details class="mt-4">
+        <summary class="cursor-pointer inline-block px-3 py-1.5 bg-indigo-500 text-white rounded-md text-sm">
+          Read More
+        </summary>
+        <p class="mt-3 text-sm text-gray-600">
+          I focus on secure coding practices and vulnerability prevention.
+        </p>
+      </details>
+    </div>
+
+    <!-- Service 5 -->
+    <div class="themed-card p-6 rounded-xl card-hover hover:bg-blue-50 transition">
+      <img src="/project/service6.png.jpeg" alt="Web Development" class="w-12 h-12 mb-4">
+      <h4 class="font-semibold">Web Development</h4>
+      <p class="text-sm text-gray-600 mt-2">
+        Front-end development.
+      </p>
+
+      <details class="mt-4">
+        <summary class="cursor-pointer inline-block px-3 py-1.5 bg-indigo-500 text-white rounded-md text-sm">
+          Read More
+        </summary>
+        <p class="mt-3 text-sm text-gray-600">
+          Clean and maintainable front-end code with modern UI standards.
+        </p>
+      </details>
+    </div>
+
+    <!-- Service 6 -->
+    <div class="themed-card p-6 rounded-xl card-hover hover:bg-blue-50 transition">
+      <img src="/project/service5.png.jpeg" alt="UI UX Design" class="w-12 h-12 mb-4">
+      <h4 class="font-semibold">UI / UX Design</h4>
+      <p class="text-sm text-gray-600 mt-2">
+        User-friendly designs.
+      </p>
+
+      <details class="mt-4">
+        <summary class="cursor-pointer inline-block px-3 py-1.5 bg-indigo-500 text-white rounded-md text-sm">
+          Read More
+        </summary>
+        <p class="mt-3 text-sm text-gray-600">
+          I design clean, modern, and user-centered interfaces.
+        </p>
+      </details>
+    </div>
+
+  </div>
+</section>
+    <!--  Projects  -->
+<section id="projects" class="max-w-6xl mx-auto px-6 py-12">
+  <h2 class="text-3xl font-bold mb-6">Projects</h2>
+
+  <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+    <!-- Project 1 -->
+    <div class="themed-card rounded-xl overflow-hidden card-hover hover:bg-blue-50 transition-colors duration-300">
+      <div class="overflow-hidden">
+        <img src="/project/project.jpg.jpeg" alt="Development and Software Project"
+             class="w-full h-44 object-cover transition-transform duration-300 hover:scale-105">
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold">Software Development</h4>
+        <p class="text-sm text-gray-600 mt-2">
+          Modern software development interface with clean UI concepts.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="themed-card rounded-xl overflow-hidden card-hover hover:bg-blue-50 transition-colors duration-300">
+      <div class="overflow-hidden">
+        <img src="project/project2.jpg.jpeg" alt="Web Coding Interface Project"
+             class="w-full h-44 object-cover transition-transform duration-300 hover:scale-105">
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold">Web Application Interface</h4>
+        <p class="text-sm text-gray-600 mt-2">
+          Interactive web application design with real-time code display.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="themed-card rounded-xl overflow-hidden card-hover hover:bg-blue-50 transition-colors duration-300">
+      <div class="overflow-hidden">
+        <img src="project/project3.jpg.jpeg" alt="Cyber Security Project"
+             class="w-full h-44 object-cover transition-transform duration-300 hover:scale-105">
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold">Cyber Security</h4>
+        <p class="text-sm text-gray-600 mt-2">
+          Security-focused project highlighting vulnerability awareness.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="themed-card rounded-xl overflow-hidden card-hover hover:bg-blue-50 transition-colors duration-300">
+      <div class="overflow-hidden">
+        <img src="project/project4.jpg.jpeg" alt="Cloud Computing Project"
+             class="w-full h-44 object-cover transition-transform duration-300 hover:scale-105">
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold">Cloud Computing</h4>
+        <p class="text-sm text-gray-600 mt-2">
+          Cloud-based architecture and modern infrastructure concepts.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="themed-card rounded-xl overflow-hidden card-hover hover:bg-blue-50 transition-colors duration-300">
+      <div class="overflow-hidden">
+        <img src="project/project5.jpg.jpeg" alt="Project Management System"
+             class="w-full h-44 object-cover transition-transform duration-300 hover:scale-105">
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold">Project Management</h4>
+        <p class="text-sm text-gray-600 mt-2">
+          End-to-end project workflow from planning to testing.
+        </p>
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="themed-card rounded-xl overflow-hidden card-hover hover:bg-blue-50 transition-colors duration-300">
+      <div class="overflow-hidden">
+        <img src="project/project6.jpg.jpeg" alt="Programming Languages Dashboard"
+             class="w-full h-44 object-cover transition-transform duration-300 hover:scale-105">
+      </div>
+      <div class="p-4">
+        <h4 class="font-semibold">Programming Dashboard</h4>
+        <p class="text-sm text-gray-600 mt-2">
+          Multi-language programming dashboard with analytics visuals.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+    <!--  Contact  -->
+    <section id="contact" class="max-w-6xl mx-auto px-6 py-12">
+      <h2 class="text-3xl font-bold mb-4">Contact</h2>
+
+      <form class="grid sm:grid-cols-2 gap-4 max-w-2xl">
+        <input type="text" placeholder="Name" class="p-3 rounded-xl themed-card">
+        <input type="email" placeholder="Email" class="p-3 rounded-xl themed-card">
+        <textarea placeholder="Message" class="sm:col-span-2 p-3 rounded-xl themed-card"></textarea>
+        <button class="sm:col-span-2 px-6 py-3 rounded-xl bg-indigo-500 text-white">
+          Submit
+        </button>
+      </form>
+    </section>
+
+    <!--  Footer  -->
+    <footer class="text-center text-sm text-gray-500 py-6 border-t">
+      © 2025 Avinash. All rights reserved.
+      <!--  Social Icons  -->
+<div class="flex  justify-center items-center gap-4 mt-4">
+
+  <!-- LinkedIn -->
+  <a href="https://www.linkedin.com" target="_blank"
+     class="w-10 h-10 flex items-center justify-center rounded-full themed-card card-hover"
+     aria-label="LinkedIn">
+    <img src="/project/linkedin.png.jpeg"
+         alt="LinkedIn"
+         class="w-6 h-6">
+  </a>
+
+  <!-- Instagram -->
+  <a href="https://www.instagram.com" target="_blank"
+     class="w-10 h-10 flex items-center justify-center rounded-full themed-card card-hover"
+     aria-label="Instagram">
+    <img src="/project/instagram.png.jpeg"
+         alt="Instagram"
+         class="w-6 h-6">
+  </a>
+
+  <!-- YouTube -->
+  <a href="https://www.youtube.com" target="_blank"
+     class="w-10 h-10 flex items-center justify-center rounded-full themed-card card-hover"
+     aria-label="YouTube">
+    <img src="/project/youtube.png.jpeg"
+         alt="YouTube"
+         class="w-6 h-6">
+  </a>
+
+  <!-- Twitter -->
+  <a href="https://www.twitter.com" target="_blank"
+     class="w-10 h-10 flex items-center justify-center rounded-full themed-card card-hover"
+     aria-label="Twitter">
+    <img src="/project/twitter.png.jpeg"
+         alt="Twitter"
+         class="w-6 h-6">
+  </a>
+
+</div>
+    </footer>
+
+  </div>
+</body>
+</html>
